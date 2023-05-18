@@ -268,3 +268,122 @@ footer{
     width: auto;
     height: 18px;
 }
+
+@media (max-width:768px){
+
+    body{
+        border: 1px solid red;
+    }
+    .header{
+        width: 100%;    
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 80px;
+        margin: 7% 2%;
+    }
+    .header img{
+        width: 30%;
+        height: 30%;
+    }
+    nav{
+        width: 60%; 
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav ul li{
+        list-style: none;
+        font-size: 14px;
+    }
+    /* article 1 */
+    article.seccion1{
+        display: grid;
+        width: 100%;
+    }
+    article > *{
+        margin: 0;
+    }
+    .separador{
+        width: 100%;
+        height: 50px;
+        background-image: url(/images/bg-curve-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .izquierda{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        order: 2;
+    }
+    .izquierda_texto h2{
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        }
+        .izquierda_texto p{
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 20px;
+            text-align: center;
+            color: #5C5871;
+        }
+        .izquierda_texto_input input{
+            width: 320px;
+            height: 45px;
+            padding-left: 10px;
+            margin-right: 0;
+            margin-top: 18px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 16px;
+            }
+            .izquierda_texto_input button{
+                width: 100%;
+                height: 45px;
+                border-radius: 5px;
+                font-weight: 500;
+                background-color: #2F65F9;
+                color: #fff;
+                border: none;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+    .derecha{
+        width: 100%;
+        height: 136%;
+        padding-top: 400px;
+    }
+    .derecha.img-1{
+     background-image: url(/images/illustration-1.svg);
+     background-size: 80%;
+     background-repeat: no-repeat;
+     background-position: center;
+     order: 1;
+    }
+    .derecha.img-2{
+        background-image: url(/images/illustration-2.svg);
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    article.seccion2{
+        display: grid;
+        width: 100%;
+        height: 500px;
+    }
+    .seccion2_izquierda{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        order: 2;
+        
+    }
+}
